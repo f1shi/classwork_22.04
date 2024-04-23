@@ -1,0 +1,18 @@
+print('введите ФИО полностью:')
+name = str(input())
+
+nameShort = ''
+
+i = 0
+while name[i] != ' ':
+    nameShort += name[i]
+    i += 1
+i += 1
+nameShort += ' ' + name[i] + '. '
+i += 1
+while name[i] != ' ':
+    i += 1
+i += 1
+nameShort += name[i] + '. '
+
+print(nameShort)
